@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid-2');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url('https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/0032398f86ea753194c5eeba97eccda2-1627249600/ExportBackgroundnomoveclound/draw-a-pixel-pokemon-battle-background.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   box-shadow: 0 0 0 1000px rgba(0,0,0,0.35) inset; */
+  min-height: 100%;
+  overflow-x: hidden;
+/*   overflow-y: hidden; */
+/*   @media (max-width: 480px) {
+		padding: 0;
+	} */
+}
+
+.game-score{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+/*   border: 1px solid red; */
+}
+
+#player-score, #computer-score {
+/*   border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  padding: 13px;
+  font-family: 'Press Start 2P', cursive;
+  color: #e2ed15;
+  -webkit-text-stroke: 1.5px #175bd1;
+}
+
+h1 {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 70px;
+  padding: 20px;
+  color: #e2ed15;
+  -webkit-text-stroke: 3.5px #175bd1;
+  letter-spacing: 3.5px;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: #e2ed15;
+  -webkit-text-stroke: 2.5px #175bd1;
+  letter-spacing: 3.5px;
+}
+
+p {
+  font-size: 15px;
+  padding: 35px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.btn {
+  font-size: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 3rem;
+  height: 15rem;
+  width: 15rem;
+  border: transparent;
+}
+
+.gameReset {
+  padding: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0.65rem;
+  margin: 0 1rem;
+  border-radius: 15px;
+  background-color: #d12411;
+  box-shadow: 2px 2px 0 rgb(0 0 0 / 0.7);
+  font-family: 'Lato', sans-serif;
+}
+
+.reset-btn:hover {
+  transform: scale(1.1);
+}
+
+/*extra css code under here*/
+
+.scores {
+/*   border: 2px solid #19112e; */
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.img-max {
+  max-width:100%;
+  max-height:100%;
+  border-radius: 15px;
+  transition: transform .1s;
+}
+
+.img-max:hover {
+   transform: scale(1.20);
+}
+
+.elements {
+  position: absolute;
+  width: 18rem;
+  height: 12rem;
+  margin: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.elements-max {
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+#results-display {
+  display: grid;
+  place-items: center;
+}
+
+#results {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+/* .text-box {
+  border: 1px solid red;
+  width: 33rem;
+  height: 8rem;
+}
+ */
+
+@media only screen and (max-width: 1300px) {
+  
+/*   body {
+    background-color: lightblue;
+  }
+   */
+  .elements {
+    position: relative;
+  }
+  
+  .elements-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+/*   .img-max {
+    max-width: 50%;
+    max-height: 50%;
+    
+  } */
+  
+  .btn {
+/*     display: row; */
+/*     place-items: center; */
+    width: 10rem;
+    height: 10rem;
+    flex-direction: row;
+  }
+  
+  .box {
+    width: 10rem;
+    height: 50%;
+  }
+}
+  
+/* Pokemon Text Font and Box */
+  
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.woff") format("woff"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.ttf") format("truetype"),
+       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box {
+  position: relative;
+  font-size: 1rem;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  border-radius: 2px;
+  padding: 8px;
+  width: 25rem;
+  height: 7rem;
+  line-height: 30px;
+  margin: auto;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+.box > i {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: black;
+  margin-top: 3.7rem;
+  animation: bounce 0.5s ease-in-out 0 infinite alternate;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+@keyframes bounce {
+  from { margin-top: 20px; }
+  to { margin-top: 23px; }
+}
