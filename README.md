@@ -1,5 +1,5 @@
-# pokemon-go-fire-water-grass
-A game inspired by rock, papers, scissors.
+# Pokemon Go - Fire,Water,Grass
+A game inspired by Rock, Papers, Scissors.
 
 Languages used : HTML5, CSS, JAVASCRIPT.
 
