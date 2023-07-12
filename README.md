@@ -13,5 +13,5 @@ The rules are simple :
 2. Water cancels fire.
 3. Grass cancels water.
 
-"Play again" button resets the score and starts the game again.
+"Play again" button resets the score to 0.
 
